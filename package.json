@@ -1,0 +1,9 @@
+{
+  "name": "fuliba-assistant-mobile",
+  "version": "1.0.1",
+  "private": true,
+  "description": "福利吧全能助手移动端配置界面适配维护项目",
+  "scripts": {
+    "test": "node scripts/check-userscript.mjs"
+  }
+}
