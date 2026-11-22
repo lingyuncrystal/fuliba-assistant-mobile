@@ -10,7 +10,7 @@ execFileSync(process.execPath, ['--check', scriptPath.pathname], {
 });
 
 const requiredMetadata = [
-  '// @version      1.0.2',
+  '// @version      1.0.3',
   '// @updateURL    https://raw.githubusercontent.com/lingyuncrystal/fuliba-assistant-mobile/main/fuliba-assistant.user.js',
   '// @downloadURL  https://raw.githubusercontent.com/lingyuncrystal/fuliba-assistant-mobile/main/fuliba-assistant.user.js',
 ];
@@ -30,6 +30,8 @@ const avatarBlurRequirements = [
   '`flb_${location.hostname}_blurAvatar`',
   'GM_getValue(avatarBlurStorageKey, false)',
   'img.avatar',
+  '.thread-item-author img',
+  '.k-viewavatar img',
   '.comment-author img.avatar',
   'td.pls img[src*="medal"]',
 ];

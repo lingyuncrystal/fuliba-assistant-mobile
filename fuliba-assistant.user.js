@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         福利吧全能助手
 // @namespace    https://greasyfork.org/zh-CN/users/1607776-lonhey
-// @version      1.0.2
+// @version      1.0.3
 // @description  福利吧全能助手（移动端配置界面适配维护版）
 // @author       lonhey
 // @homepageURL  https://github.com/lingyuncrystal/fuliba-assistant-mobile
@@ -199,6 +199,8 @@ if (GM_getValue(avatarBlurStorageKey, false)) {
         .avatar img,
         .favatar img,
         img.avatar,
+        .thread-item-author img,
+        .k-viewavatar img,
         .user-avatar img,
         .author-avatar img,
         .comment-author img.avatar,
@@ -211,6 +213,8 @@ if (GM_getValue(avatarBlurStorageKey, false)) {
         .avatar img:hover,
         .favatar img:hover,
         img.avatar:hover,
+        .thread-item-author img:hover,
+        .k-viewavatar img:hover,
         .user-avatar img:hover,
         .author-avatar img:hover,
         .comment-author img.avatar:hover,
