@@ -10,7 +10,7 @@ execFileSync(process.execPath, ['--check', scriptPath.pathname], {
 });
 
 const requiredMetadata = [
-  '// @version      1.0.1',
+  '// @version      1.0.2',
   '// @updateURL    https://raw.githubusercontent.com/lingyuncrystal/fuliba-assistant-mobile/main/fuliba-assistant.user.js',
   '// @downloadURL  https://raw.githubusercontent.com/lingyuncrystal/fuliba-assistant-mobile/main/fuliba-assistant.user.js',
 ];
@@ -26,4 +26,20 @@ if (!source.includes('@media (max-width: 768px)')) {
   process.exit(1);
 }
 
-console.log('userscript 语法、自动更新元数据和移动端样式检查通过。');
+const avatarBlurRequirements = [
+  '`flb_${location.hostname}_blurAvatar`',
+  'GM_getValue(avatarBlurStorageKey, false)',
+  'img.avatar',
+  '.comment-author img.avatar',
+  'td.pls img[src*="medal"]',
+];
+
+const missingAvatarBlurSupport = avatarBlurRequirements.filter(
+  (entry) => !source.includes(entry),
+);
+if (missingAvatarBlurSupport.length > 0) {
+  console.error(`头像模糊兼容层不完整：\n${missingAvatarBlurSupport.join('\n')}`);
+  process.exit(1);
+}
+
+console.log('userscript 语法、自动更新元数据、移动端样式和头像模糊兼容层检查通过。');
