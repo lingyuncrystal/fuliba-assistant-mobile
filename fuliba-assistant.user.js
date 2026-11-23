@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         福利吧全能助手
 // @namespace    https://greasyfork.org/zh-CN/users/1607776-lonhey
-// @version      1.0.3
+// @version      1.0.4
 // @description  福利吧全能助手（移动端配置界面适配维护版）
 // @author       lonhey
+// @icon         https://www.wnflb2023.com/favicon.ico
 // @homepageURL  https://github.com/lingyuncrystal/fuliba-assistant-mobile
 // @supportURL   https://github.com/lingyuncrystal/fuliba-assistant-mobile/issues
 // @updateURL    https://raw.githubusercontent.com/lingyuncrystal/fuliba-assistant-mobile/main/fuliba-assistant.user.js

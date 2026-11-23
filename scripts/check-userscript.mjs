@@ -10,7 +10,8 @@ execFileSync(process.execPath, ['--check', scriptPath.pathname], {
 });
 
 const requiredMetadata = [
-  '// @version      1.0.3',
+  '// @version      1.0.4',
+  '// @icon         https://www.wnflb2023.com/favicon.ico',
   '// @updateURL    https://raw.githubusercontent.com/lingyuncrystal/fuliba-assistant-mobile/main/fuliba-assistant.user.js',
   '// @downloadURL  https://raw.githubusercontent.com/lingyuncrystal/fuliba-assistant-mobile/main/fuliba-assistant.user.js',
 ];
